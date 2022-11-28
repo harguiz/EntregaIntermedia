@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	{% load static %}
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="Start your development with Meyawo landing page.">
+    <meta name="author" content="Devcrud">
+    <title>Meyawo Landing page | Free Bootstrap 4.3.x landing page</title>
+    <!-- font icons -->
+    <link rel="stylesheet" href="{% static 'AppStatic/assets/vendors/themify-icons/css/themify-icons.css' %}">
+    <!-- Bootstrap + Meyawo main styles -->
+	<link rel="stylesheet" href="{% static 'AppStatic/assets/css/meyawo.css' %}">
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="40" id="home">
+
+    <!-- Page Navbar -->
+    <nav class="custom-navbar" data-spy="affix" data-offset-top="20">
+        <div class="container">
+            <a class="logo" href="#">Meyawo</a>         
+            <ul class="nav">
+                <li class="item">
+                    <a class="link" href="#home">Home</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#about">Nostros</a>
+                </li>
+                <li class="item">
+                    <a class="link" href="#portfolio">Formularios</a>
+                </li>
+                
+                
+            </ul>
+            <a href="javascript:void(0)" id="nav-toggle" class="hamburger hamburger--elastic">
+                <div class="hamburger-box">
+                  <div class="hamburger-inner"></div>
+                </div>
+            </a>
+        </div>          
+    </nav><!-- End of Page Navbar -->
+
+    <!-- page header -->
+    <header id="home" class="header">
+        <div class="overlay"></div>
+        <div class="header-content container">
+            <h1 class="header-title">
+                <span class="up">Hagan sus apuestas!</span>
+                <span class="down">Casa de Apuestas</span>
+            </h1>
+            <p class="header-subtitle">PRODE MUNDIAL 2022</p>            
+
+        </div>              
+    </header><!-- end of page header -->
+
+    <!-- about section -->
+    <section class="section pt-0" id="about">
+        <!-- container -->
+        <div class="container text-center">
+            <!-- about wrapper -->
+            <div class="about">
+                <div class="about-img-holder">
+                    <img src="{% static 'AppStatic/assets/imgs/man.png' %}" class="about-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                </div>
+                <div class="about-caption">
+                    
+                    <h2 class="section-title mb-3">Nosotros</h2>
+                    <p>
+                        Es el lugar donde vas a poder competir con sus amigos, ganar plata y ver quien sabe más de futbol.              
+                    </p>
+                    
+                </div>              
+            </div><!-- end of about wrapper -->
+        </div><!-- end of container -->
+    </section> <!-- end of about section -->
+
+    <!-- service section -->
+    <section class="section" id="service">
+        <div class="container text-center">
+            <p class="section-subtitle">Que hacemos ?</p>
+            <h6 class="section-title mb-6">Servicios</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-6 col-lg-3">
+                    <div class="service-card">
+                        <div class="body">
+                            <img src="{% static 'AppStatic/assets/imgs/pencil-case.svg' %}" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page" class="icon">
+                            <h6 class="title">Pronosticos</h6>
+                            <p class="subtitle">Elegí el campeón, el subcampeón y el goleador del mundial.</p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div><!-- end of row -->
+        </div>
+    </section><!-- end of service section -->
+
+    <!-- portfolio section -->
+    <section class="section" id="portfolio">
+        <div class="container text-center">
+            <p class="section-subtitle">Concreta tu apuesta</p>
+            <h6 class="section-title mb-6">PRONOSTICOS</h6>
+            <!-- row -->
+            <div class="row">
+                <div class="col-md-4">
+                    <a  class="portfolio-card">
+                        <img src="{% static 'AppStatic/assets/imgs/folio-1.jpg' %}" class="portfolio-card-img" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                {% block contenido1 %}
+                             
+                                {% endblock %}
+                                
+                                {% block formu1 %}
+                             
+                                {% endblock %}
+                                
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-card">
+                        <img class="portfolio-card-img" src="{% static 'AppStatic/assets/imgs/folio-2.jpg' %}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                {% block contenido2 %}
+                             
+                                {% endblock %}
+                                
+                                {% block formu2 %}
+                             
+                                {% endblock %}
+                                
+                            </span>                         
+                        </span>                         
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a class="portfolio-card">
+                        <img class="portfolio-card-img" src="{% static 'AppStatic/assets/imgs/folio-3.jpg' %}" class="img-responsive rounded" alt="Download free bootstrap 4 landing page, free boootstrap 4 templates, Download free bootstrap 4.1 landing page, free boootstrap 4.1.1 templates, meyawo Landing page">    
+                        <span class="portfolio-card-overlay">
+                            <span class="portfolio-card-caption">
+                                {% block contenido3 %}
+                             
+                                {% endblock %}
+                                
+                                {% block formu3 %}
+                             
+                                {% endblock %}                        
+                            </span>                         
+                        </span>                     
+                    </a>
+                </div>
+            </div><!-- end of row -->
+        </div><!-- end of container -->
+    </section> <!-- end of portfolio section -->
+
+    <div>
+        
+        {% block busqueda %}
+                             
+        {% endblock %}
+        
+        {% block respuesta %}
+                             
+        {% endblock %}
+        
+    </div>
+    
+    <!-- footer -->
+    <div class="container">
+        <footer class="footer">       
+            <p class="mb-0">Copyright <script>document.write(new Date().getFullYear())</script> &copy; <a href="http://www.devcrud.com">DevCRUD</a></p>
+            <div class="social-links text-right m-auto ml-sm-auto">
+                <a href="javascript:void(0)" class="link"><i class="ti-facebook"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-twitter-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-google"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-pinterest-alt"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-instagram"></i></a>
+                <a href="javascript:void(0)" class="link"><i class="ti-rss"></i></a>
+            </div>
+        </footer>
+    </div> <!-- end of page footer -->
+	
+	<!-- core  -->
+    <script src="{% static 'AppStatic/assets/vendors/jquery/jquery-3.4.1.js' %}"></script>
+    <script src="{% static 'AppStatic/assets/vendors/bootstrap/bootstrap.bundle.js' %}"></script>
+
+    <!-- bootstrap 3 affix -->
+	<script src="{% static 'AppStatic/assets/vendors/bootstrap/bootstrap.affix.js' %}"></script>
+
+    <!-- Meyawo js -->
+    <script src="{% static 'AppStatic/assets/js/meyawo.js' %}"></script>
+
+</body>
+</html>

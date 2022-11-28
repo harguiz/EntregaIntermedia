@@ -1,0 +1,12 @@
+{% extends "AppTemplate/padre.html" %}
+{% load static %}
+{% block respuesta %}
+<h4>Resultado busqueda</h4>
+{%  for elemento in Pronostico %}
+<h4>{{elemento}}</h4>
+<p>Campeón: {{elemento.campeon}} Sub-Campeón:{{elemento.subcampeon}} Goleador: {{elemento.goleador}}</p>
+<p>Sub-Campeón:{{elemento.subcampeon}}</p>
+<p>Goleador: {{elemento.goleador}}</p>
+{% endfor %}
+
+{% endblock %}

@@ -1,0 +1,11 @@
+{% extends "AppTemplate/padre.html" %}
+{% load static %}
+{% block busqueda %}
+<h4>Busqueda Pronostico</h4>
+
+<form action="{% url 'respuestapronos' %}" method="GET"> 
+    <input type="text" name ="busquedapronostico" id="idpronostico">
+    <input type="submit" value="Buscar">
+</form>
+
+{% endblock %}

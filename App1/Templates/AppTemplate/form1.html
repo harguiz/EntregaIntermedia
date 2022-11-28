@@ -1,0 +1,13 @@
+{% extends "AppTemplate/padre.html" %}
+{% load static %}
+{% block formu1 %}
+<h4>Datos Personales</h4>
+<form action="{% url 'form1' %}" method="POST"> {% csrf_token %}
+    <table>
+
+    {{ form.as_table }}
+        
+    </table>
+    <input type="submit" value="Carga Datos">
+</form>
+{% endblock %}
